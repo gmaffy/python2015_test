@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/eenv python
 
 import sys
 
@@ -13,7 +13,7 @@ def count_name(filename, protein_name):
 if len(sys.argv) != 3:
     sys.exit("Usage: count_name.py <protein names file> <protein name>")
 
-filename = sys.argv[1]
-protein_name = sys.argv[2]
-print count_name(filename, protein_name)
-
+filename = sys.argv[0]
+protein_name = sys.argv[1]
+name_count = count_name(filename, protein_name)
+print protein_name, name_count
